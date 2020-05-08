@@ -1,0 +1,12 @@
+{
+    "name": "Gatsby-Strapi",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "(cd backend && yarn run develop) & (cd frontend && gatsby develop)"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
