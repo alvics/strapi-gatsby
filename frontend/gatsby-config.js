@@ -2,9 +2,9 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starpi Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gatsby Strapi `,
+    description: `Gatsby frontend with strapi backend`,
+    author: `Allen Pavic`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -2,7 +2,7 @@ import React from "react"
 import Product from "../Products/Product"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import styles from "../../css/products.module.css"
-import ButtonStripe from "../ButtonStripe"
+// import ButtonStripe from "../ButtonStripe"
 
 const query = graphql`
   {
@@ -11,6 +11,7 @@ const query = graphql`
         id
         title
         price
+        url
         image {
           childImageSharp {
             fluid(maxWidth: 640, maxHeight: 480) {
@@ -37,12 +38,21 @@ const Featured = () => {
           return <Product key={product.id} {...product} />
         })}
       </div>
-      <Link to="/products" className="btn-primary">
+      <Link to={`/products/`} className="btn-primary">
         more products
       </Link>
-      <ButtonStripe />
     </section>
   )
 }
+
+// export const URL_query = graphql`
+// GetURL($url: String) {
+//   strapiProduct(url: { eq: $url }) {
+//     title
+//     description
+//     price
+//   }
+// }
+// `
 
 export default Featured

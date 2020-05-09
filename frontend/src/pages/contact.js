@@ -42,7 +42,7 @@ export default class MyForm extends React.Component {
 
                   <ul>
                     <li>
-                      <i className="fa fa-road"></i> 22 Beitz Ave
+                      <i className="fa fa-road"></i> 22 Street Ave
                     </li>
                     <li>
                       <i className="fa fa-phone"></i> (555) 555-5555
